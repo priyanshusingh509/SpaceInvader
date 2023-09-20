@@ -1,8 +1,8 @@
-# Imports
+# Importing reqired libraries
 import pygame
 from random import randint
 
-# Init
+# Initialization
 game = "start"
 pygame.init()
 screen = pygame.display.set_mode((800,600))     # Resolution
@@ -56,7 +56,7 @@ def enemy_func(x,y,i):
 def fire(x,y):
     global bullet_state
     bullet_state = "Fired"
-    screen.blit(bullet, (x+16,y-20))
+    screen.blit(bullet, (x + 16, y - 20))
 
 # Score
 def show_score(x,y):
